@@ -1,0 +1,59 @@
+@layer base {
+  .cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-inline: 3rem;
+  }
+
+  .card-container {
+    border: 1px solid white;
+    border-radius: .5em;
+    overflow: hidden;
+    transition: transform .2s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    &.number1 {
+      border: 2px solid gold;
+      box-shadow: 0 0 25px 0 gold;
+    }
+
+  }
+
+  .card-profile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-inline: .25em;
+    
+    width: 200px;
+    height: 250px;
+
+    background-size: cover;
+    background-position: center;
+
+    font-size: 3rem;
+    cursor: pointer;
+
+    &.number1 {
+      color: gold;
+    }
+    
+  }
+
+  .card-footer {
+    font-size: 1.4rem;
+    background-color: white;
+    color: black;
+    padding-inline: .25em;
+    padding-block: .1em;
+    letter-spacing: .01em;
+    font-family: "Roboto", sans-serif;
+  }
+  
+}

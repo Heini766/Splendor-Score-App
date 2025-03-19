@@ -1,0 +1,6 @@
+<svg id="cancelEx" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <g class="graphic1">
+    <path class="line" d="M25 12.5 L25 37.5" stroke="white" />
+    <path class="line" d="M12.5 25 L37.5 25" stroke="white" />
+  </g>
+</svg>

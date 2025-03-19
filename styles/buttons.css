@@ -1,0 +1,75 @@
+@layer base {
+
+  button {
+    border: none;
+    cursor: pointer;
+  }
+
+  .addBtn {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1em;
+    background-color: hsl(0 0% 0% / .25);
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+
+    &.game {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/bg2.jpg);
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+
+    &.player {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/bg1.jpg);
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+    
+  }
+
+  .cancel-btn {
+    background-color: hsl(0 100% 50% / .75);
+    padding-inline: .5em;
+  }
+
+  #cancelIcon {
+
+    width: 25px;
+
+    .cancelIcon-group {
+      transform-origin: center;
+      transform: rotate(45deg);
+
+      .line {
+        stroke-width: 3;
+      }
+      
+    }
+    
+  }
+
+  #addIcon {
+    width: 75px;
+
+    .line {
+      stroke-width: 5;
+    }
+    
+  }
+}

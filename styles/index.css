@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaini&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer resets {
+  * {
+    box-sizing: border-box;
+    user-select: none;
+  }
+
+  h1, h2, h3 {
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer base {
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: "jaini", system-ui;
+    height: 100vh;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto 1fr;
+    height: auto;
+    padding-block: 5em;
+    
+  }
+  
+}

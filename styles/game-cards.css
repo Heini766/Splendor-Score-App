@@ -1,0 +1,77 @@
+@layer base {
+
+  .game-card-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    align-self: flex-start;
+    gap: 3rem;
+  }
+
+  @media (orientation: portrait) {
+    .game-card-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    border-radius: 3em;
+    border-end-end-radius: 0;
+    border-end-start-radius: 0;
+    overflow: hidden;
+  }
+
+  .game-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .results-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-inline: 2em;
+    padding-block: 1em;
+  }
+
+  .player-result-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 4em;
+  }
+
+  .player-result-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+
+    &.winner {
+      border: 3px solid gold;
+    }
+  }
+
+  .player-result {
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  
+}

@@ -1,0 +1,37 @@
+@layer base {
+
+  a {
+    font-size: inherit;
+    cursor: pointer;
+    padding-inline: .75em;
+    padding-block: .25em;
+
+    &:hover {
+      background-color: hsl(0 0% 100% / .25);
+    }
+    
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+  }
+
+  @media (width < 300px) {
+    .links-container {
+      flex-direction: column;
+    }
+  }
+
+  .active-page {
+    color: hsl(55, 90%, 50%);
+  }
+  
+}
