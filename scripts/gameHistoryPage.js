@@ -121,7 +121,7 @@ function renderGames() {
     gameHeader.addEventListener('click', () => {
       gameHistory.splice(index, 1);
       localStorage.setItem('Game-History', JSON.stringify(gameHistory));
-      playerList.forEach((player) => {
+        playerList.forEach((player) => {
         player.scoreHis.splice(index, 1);
       });
       localStorage.setItem('Players', JSON.stringify(playerList));
@@ -129,7 +129,7 @@ function renderGames() {
         mainDs.appendChild(gameCardsSection);
         renderGames();
       } else {
-        genBtn(btnComps[1], mainDs);
+        //genBtn(btnComps[1], mainDs);
       }
       gameCardContainer.remove();
     })
